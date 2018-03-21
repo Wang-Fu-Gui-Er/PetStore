@@ -6,6 +6,8 @@
 M:Mybatis
 V:HTML CSS JQuery AJAX
 C:Spring SpringMVC
+
+
 综合详述：
 1.使用RestFul的架构风格，使得前后端分离，只需各自提供JSON数据即可，前端通过ajax提交请求给后端，
 后端进行数据处理，返回数据也以json格式返回。
