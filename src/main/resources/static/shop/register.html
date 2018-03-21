@@ -1,0 +1,88 @@
+<html>
+<head>
+    <TITLE>注册</TITLE>
+    <META content="text/html; charset=utf-8" http-equiv=Content-Type>
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/top.js"></script>
+    <script type="text/javascript" src="../js/tojson.js"></script>
+    <script type="text/javascript" src="../js/register.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie-1.4.1.min.js"></script>
+</head>
+<body>
+<div id="top"></div>
+<br/>
+<form id="form2">
+    <TABLE cellpadding=10 cellspacing=0 align=center border=1 width="400" bgcolor=#dddddd>
+        <TR>
+            <TD>
+                <FONT color=darkgreen><H3>基本信息</H3></FONT>
+                <TABLE border=0 bgcolor=#FFFF88 width="100%">
+                    <TR bgcolor=#FFFF88>
+                        <TD>
+                            <label>用户名:</label>
+                            <input type="text" name="username" id="username"/>
+                            <b><font color="red"><span id="userError"></span></font></b><br/>
+                        </TD>
+                    </TR>
+                    <TR bgcolor=#FFFF88>
+                        <TD>
+                            <label>密&nbsp;码:</label>
+                            <input type="password" name="password" id="password"/>
+                            <b><font color="red"><span id="passError"></span></font></b><br/>
+                        </TD>
+                    </TR>
+                    <TR bgcolor=#FFFF88>
+                        <TD>
+                            <label>确认密码：</label>
+                            <input type="password" name="repassword" id="repassword"/>
+                            <b><font color="red"><span id="repassError"></span></font></b><br/>
+                        </TD>
+                    </TR>
+                </TABLE>
+                <FONT color=darkgreen><H3>附加信息</H3></FONT>
+                <TABLE bgcolor="#FFFF88" border=0 bgcolor=#FFFF88 width="100%">
+                    <TR bgcolor=#FFFF88>
+                        <TD>
+                            <label>邮&nbsp;箱</label>
+                            <input type="text" name="email" id="email"/>
+                            <b><font color="red"><span id="emailError"></span></font></b><br/>
+                        </TD>
+                    </TR>
+                    <TR bgcolor=#FFFF88>
+                        <TD>
+                            <label>真实姓名</label>
+                            <input type="text" name="realname" id="realname"/>
+                            <b><font color="red"><span id="realError"></span></font></b><br/>
+                        </TD>
+                    </TR>
+                    <TR bgcolor=#FFFF88>
+                        <TD>
+                            <label>地&nbsp;址</label>
+                            <input type="text" name="address" id="address"/>
+                            <b><font color="red"><span id="addError"></span></font></b><br/>
+                        </TD>
+                    </TR>
+                </TABLE>
+                <FONT color=darkgreen><H3>偏好设置</H3></FONT>
+                <TABLE bgcolor="#FFFF88" border=0 cellpadding=3 cellspacing=1 width="100%">
+                    <TR bgcolor=#FFFF88>
+                        <TD>
+                            <label>语&nbsp;种：</label><!--x.id==value x.name=text-->
+                            <select name="profile.language" id="lang"></select>
+                        </TD>
+                    </TR>
+                    <TR bgcolor=#FFFF88>
+                        <TD>
+                            <label>宠&nbsp;物：</label>
+                            <select name="profile.cateId" id="category"></select>
+                        </TD>
+                    </TR>
+                </TABLE>
+    </TABLE>
+</form>
+<BR>
+<CENTER>
+    <input border=0 id="save" type="image" src="../images/button_submit.gif"/>
+</CENTER>
+</body>
+</html>

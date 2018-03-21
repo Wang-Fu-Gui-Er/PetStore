@@ -1,0 +1,53 @@
+<html>
+<head>
+    <TITLE>购物车</TITLE>
+    <META content="text/html; charset=utf-8" http-equiv=Content-Type>
+    <script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/top.js"></script>
+    <script type="text/javascript" src="../js/jquery.cookie-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../js/cart.js"></script>
+    <script type="text/javascript" src="../js/tojson.js"></script>
+</head>
+<body>
+<div id="top"></div>
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
+    <tr>
+        <td valign="top" width="5%" align="left">
+            <table align="left" bgcolor="#008800" border="0" cellspacing="2"
+                   cellpadding="2">
+                <tr>
+                    <td bgcolor="#FFFF88">
+                        <a href="../index.html"><b><font color="BLACK" size="2">&lt;&lt;主菜单</font>
+                        </b></a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td valign="top" align="center">
+            <h2 align="center" id="cartMsg"></h2>
+            <form name="form1" method="post" action="#">
+                <table align="center" bgcolor="#008800" border="0" cellspacing="2"
+                       cellpadding="5" id="carts">
+                    <tr bgcolor="#cccccc">
+                        <!--<td>项目编号</td>-->
+                        <!--<td>产品编号</td>-->
+                        <!--<td>产品描述</td>-->
+                        <td>产品名称</td>
+                        <td>项目描述</td>
+                        <td>单价</td>
+                        <td>数量</td>
+                        <td>合计</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </form>
+            <br/>
+            <center>
+                <img  id="checkOut" border="0" src="../images/button_checkout.gif"/>
+            </center>
+        </td>
+    </tr>
+</table>
+<br>
+</body>
+</html>

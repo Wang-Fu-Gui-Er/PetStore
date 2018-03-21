@@ -1,0 +1,61 @@
+<html>
+<head>
+	<TITLE>登录</TITLE>
+	<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+	<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+	<!--<script type="text/javascript" src="../js/top.js"></script>-->
+	<script type="text/javascript" src="../js/login.js"></script>
+	<script type="text/javascript" src="../js/tojson.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie-1.4.1.min.js"></script>
+</head>
+<body>
+<div id="top"></div>
+<TABLE background="../images/bkg-topbar.gif" border=0 cellSpacing=0
+	   cellPadding=5 width="100%" id="mytable">
+	<TBODY>
+	<TR>
+		<TD>
+			<IMG border=0 src="../images/logo-topbar.gif">
+		</TD>
+		<TD align=right>
+
+		</TD>
+		<TD align=left valign="bottom">
+		</TD>
+		<TD>
+		</TD>
+	</TR>
+	</TBODY>
+</TABLE>
+<br/>
+<table align="center" border="0">
+	<tr><td colspan="2" align="center"><b>登录</b></td></tr>
+	<tr><td colspan="2" align="center"><b>&nbsp;</b></td></tr>
+	<tr>
+		<td colspan="2">
+			<form id="form1">
+				<label>用户名：</label>
+				<input type="text" name="username" id="username"/>
+				<b><font color="red"><span id="uError"></span></font></b>
+				<br/><br/>
+				<label>密&nbsp;码：</label>
+				<input type="password" name="password" id="password"/>
+				<b><font color="red"><span id="pError"></span></font></b><br/>
+				<b><font color="red"><span id="loginError"></span></font></b>
+			</form>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			&nbsp;
+		</td>
+		<td>
+			<input type="image" border="0" src="../images/button_submit.gif" id="login"/>
+			<a href="register.html">
+				<img border="0" src="../images/button_register_now.gif" />
+			</a>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
